@@ -1,0 +1,15 @@
+{
+  "name": "stock-project",
+  "version": "1.0.0",
+  "description": "A NodeJS web application that provides the variation in stocks of major US Companies as influenced by world events,and predicts variations which may be caused by future world events.",
+  "main": "stocks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yahoo-finance-quotes": "^1.0.3",
+    "yfinance": "0.0.6"
+  }
+}
