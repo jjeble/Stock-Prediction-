@@ -1,10 +1,21 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<br><br><br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+<br>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-7"><img src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="60" height="50"/> 
+  <font class = "data" size = "5" color = 'white'> <b> Stocks Stay Connected </b> </font></div>
+  <div class="col-sm-4"></div>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br>
 
 
 <font size = "15" color = 'white'>
-  	<center> <b> <p class="serif"> STOCK PREDICTOR </p> </b> </center>
+  	<center> <b> <p class="title"> STOCK PREDICTOR </p> </b> </center>
 </font>
 
 
@@ -18,10 +29,9 @@ Given the company name, date, and event, stock predictor
 will predict the future stock prices.
 </font>
 -->
+<!--Lucida Sans-->
 <br><br>
-
-<center><button id = "link" class = "btn btn-primary" type = "button">Go!</button></center>
-
+<center><button id = "link" class = "btn btn-primary" type = "button" onclick = "location.href = 'options.html';">Go!</button></center>
 
 
 <style>
@@ -41,14 +51,21 @@ body {
 
 }
 
+
 #link:hover{
 	background-color:  #404040;
 
 }
 
-p.serif {
-    font-family: "Georgia", Times, serif;
+p.title {
+    font-family: "Georgia", Times, title;
+  
 }
+
+font.data{
+	font-family: "Lucida Sans", Times, title;
+}
+
 
 
 <style>
