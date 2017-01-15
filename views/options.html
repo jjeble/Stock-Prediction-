@@ -3,12 +3,18 @@
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+
 <div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="60" height="50"/>
-          </a>
+
+
+          <a href="./stock_home.html"><img style="position: absolute; top:4px;left:35px;width:45px;height:45px" src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="50" height="45"></a>
+          <div style = "position: absolute; top:13px;left:90px;width:400px;height:25px"><font class = "data" size = "5" color = 'white'> Stocks. Stay Connected </font></div>
+
+
+
         </div>
         <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
           <span class = "icon-bar"></span>
@@ -20,27 +26,10 @@
             <li><a href = "./stock_home.html">Home</a></li>
             <li class = "active"><a href="./options.html">Predictor</a></li>
             <li><a href="./aboutus.html">About Us</a></li>
-=            </ul>
+          </ul>
         </div>
       </div>
     </nav>
-  </div>
-
-
-
-
-
-
-
-<html>
-<body>
-
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-7"><img src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="60" height="50"/>
-    <font class = "data" size = "5" color = 'white'> <b> Stocks Stay Connected </b> </font></div>
-    <div class="col-sm-4"></div>
-
   </div>
 
 <br><br><br><br><br>
@@ -56,11 +45,94 @@
 </form>
 </center>
 
+
+<br><br><br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Panels with Contextual Classes</h2>
+  <div class="panel-group">
+    <div class="panel panel-default" style="position: absolute; top:400px;left:115px;width:605px;height:80px">
+      <div class="panel-heading">Panel with panel-default class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-primary" style="position: absolute; top:475px;left:115px;width:1200px;height:80px">
+      <div class="panel-heading">Panel with panel-primary class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-success" style="position: absolute; top:554px;left:115px;width:400px;height:280px">
+      <div class="panel-heading">Panel with panel-success class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-info" style="position: absolute; top:554px;left:515px;width:400px;height:280px">
+      <div class="panel-heading">Panel with panel-info class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-warning" style="position: absolute; top:554px;left:915px;width:400px;height:280px">
+      <div class="panel-heading">Panel with panel-warning class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+
+    <div class="panel panel-danger" style="position: absolute; top:395px;left:715px;width:600px;height:80px">
+      <div class="panel-heading">Panel with panel-danger class</div>
+      <div class="panel-body">Panel Content</div>
+    </div>
+  </div>
+</div>
+
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
 body {
 	background-color: #6666ff
+}
+p.title {
+    font-family: "Georgia", Times, title;
+
+}
+font.data{
+	font-family: "Apple Chancery", Times, title;
 }
 </style>
