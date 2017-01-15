@@ -1,27 +1,45 @@
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 <br>
-<div class="row">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-7"><img src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="60" height="50"/> 
-  <font class = "data" size = "5" color = 'white'> <b> Stocks Stay Connected </b> </font></div>
-  <div class="col-sm-4"></div>
+  <div>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="60" height="50"/>
+            </a>
+          </div>
+          <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+          </button>
+          <div class = "collapse navbar-collapse navHeaderCollapse" id = "links">
+            <ul class="nav navbar-nav navbar-right navigation">
+              <li class = "active"><a href = "./stock_home.html">Home</a></li>
+              <li><a href="./options.html">Predictor</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+=            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-</div>
+
+
 
 
 <br><br><br><br><br><br><br><br>
 
 
-<font size = "15" color = 'white'>
+<font size = "15" color = 'green'>
   	<center> <b> <p class="title"> STOCK PREDICTOR </p> </b> </center>
 </font>
 
 
 <!--
 </font>
-
 <font size = '5'>
 Welcome to the official corporate site
 of the world's first realtime stock predictor!
@@ -33,13 +51,11 @@ will predict the future stock prices.
 <br><br>
 <center><button id = "link" class = "btn btn-primary" type = "button" onclick = "location.href = 'options.html';">Go!</button></center>
 
-
 <style>
 body {
 	background-image: url("Picture1.png");
 	background-size: cover;
 }
-
 #link{
 	background-color: #ff4d4d;
 	border-radius: 6px;
@@ -48,26 +64,15 @@ body {
 	height: 50px;
 	-webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-
 }
-
-
 #link:hover{
 	background-color:  #404040;
-
 }
-
 p.title {
     font-family: "Georgia", Times, title;
-  
-}
 
+}
 font.data{
 	font-family: "Lucida Sans", Times, title;
 }
-
-
-
 <style>
-
-
