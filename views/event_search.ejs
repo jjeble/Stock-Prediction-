@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Event Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+</head>
+<style>
+body{
+background-image: url("Picture1.png");
+}
+</style>
+<body>
+  <% include partials/nav.ejs %>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7"><img src="stocks_logo.jpg" class="img-circle" alt="Cinque Terre" width="60" height="50"/>
+    <font class = "data" size = "5" color = 'white'> <b> Stocks Stay Connected </b> </font></div>
+    <div class="col-sm-4"></div>
+
+  </div>
+
+<br><br><br><br><br>
+<center>
+  <form method="post" action="/" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+    <input type="text" name="event">
+    
+    <input type="text" name="comp">
+    <input type="submit" value="Submit">
+</form>
+</center>
+
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+    $("#submit_req").click("on",function(){
+      var val = document.getElementById("comp").value;
+      var eventName = document.getElementById("eve").value;
+      var req = $.ajax({
+        url: './todoController.js',
+        type: 'POST',
+        data: {company: val, event: eventName},
+        dataType: 'json'
+      });
+    })
+  });
+</script>

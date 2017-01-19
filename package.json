@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cheerio": "^0.22.0",
+    "markit-on-demand": "^1.0.6",
+    "request": "^2.79.0",
+    "stock-symbol-lookup": "0.0.11",
     "yahoo-finance-quotes": "^1.0.3",
     "yfinance": "0.0.6"
   }
